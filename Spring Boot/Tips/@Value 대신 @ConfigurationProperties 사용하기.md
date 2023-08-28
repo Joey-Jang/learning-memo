@@ -8,7 +8,7 @@ application.properties의 값을 활용하기 위해서 @Value를 사용하고 �
 @ConfigurationProperties를 사용하여 Bean으로 등록하기로 함.
 
 ### ♻️ 변경 후
-@ConfigurationProperties을 활용하여 application.properties의 값들을 Bean으로 바인딩함.
+@ConfigurationProperties를 활용하여 application.properties의 값들을 Bean으로 바인딩함.
 ```java
 @RequiredArgsConstructor
 @Getter
