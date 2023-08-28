@@ -3,12 +3,12 @@
 ### ⚠️ 변경 전
 application.properties의 값을 활용하기 위해서 @Value를 사용하고 있음.
 
-매번 빈 내부에서 @Value을 사용하여 값을 가져와야하는 불편함이 있음.
+매번 Bean 내부에서 @Value을 사용하여 값을 가져와야하는 불편함이 있음.
 
-@ConfigurationProperties를 사용하여 빈으로 등록하기로 함.
+@ConfigurationProperties를 사용하여 Bean으로 등록하기로 함.
 
 ### ♻️ 변경 후
-@ConfigurationProperties과을 활용하여 application.properties의 값들을 Bean으로 바인딩함.
+@ConfigurationProperties을 활용하여 application.properties의 값들을 Bean으로 바인딩함.
 ```java
 @RequiredArgsConstructor
 @Getter
